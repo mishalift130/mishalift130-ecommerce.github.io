@@ -1,0 +1,5210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#botn01").click(function(){
+    $("#dell,#acer,#hp,#lenovo").show();
+   
+  });
+  $("#botn5").click(function(){
+    $("#acer,#hp,#lenovo").hide();
+    $("#dell").show();
+  });
+ 
+  $("#botn6").click(function(){
+    $("#dell,#hp,#lenovo").hide();
+    $("#acer").show();
+  });
+  $("#botn7").click(function(){
+    $("#dell,#acer,#lenovo").hide();
+    $("#hp").show();
+  });
+  $("#botn8").click(function(){
+    $("#dell,#acer,#hp").hide();
+    $("#lenovo").show();
+  });
+  });
+  
+  </script>
+  <style>
+ 
+  div.polaroid1 {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.pricetag1 {
+font-family: 'Alatsi';
+font-size: 2vh;
+border:1px solid darkblue;
+  text-align: center;
+  padding: 5px;
+}
+.details1 {
+  position: relative;
+  
+}
+.chobi1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#dtlbtn {
+background:orange;
+font-size: 2vh;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.details1:hover #dtlbtn {
+  opacity: 1;
+}
+.text1 {
+font-family: 'Alatsi';
+  background-color:none;
+  color: black;
+  font-size: 3vh;
+  padding: 5px 5px;
+}
+
+
+
+
+.bttn11 {
+background:black;
+color:white;
+padding:5px;
+border:none;
+margin:2px;
+}
+.bttn21 {
+background:tomato;
+color:black;
+padding:5px;
+border:none;
+margin:2px;
+}
+@media only screen and (max-width: 360px) {
+div.pricetag1 {
+font-family: 'Alatsi';
+font-size: 1vh;
+border:1px solid darkblue;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.text1 {
+font-family: 'Alatsi';
+  background-color:none;
+  color: black;
+  font-size: 3vh;
+  padding: 5px 5px;
+}
+#dtlbtn {
+background:orange;
+font-size: 2vh;
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+}
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+<br>
+<br>
+ <h3 style="text-align:center;color:#cc9966;">LAPTOP </h3>
+ <br>
+<div class="btn-group">
+<button type="button" class="btn "id="botn01" style="margin:2px;border:1px solid darkblue;">Show All</button>
+    <button type="button" class="btn "id="botn5" style="margin:2px;border:1px solid darkblue;">DELL</button>
+    <button type="button" class="btn "id="botn6"style="margin:2px;border:1px solid darkblue;">ACER</button>
+    <button type="button" class="btn"id="botn7"style="margin:2px;border:1px solid darkblue;"><i>HP</i></button>
+    <button type="button" class="btn "id="botn8"style="margin:2px;border:1px solid darkblue;">LENOVO</button>
+  </div>
+  <br><br>
+  
+
+
+<div class="container-fluid"id="dell">
+<h2 style="text-align:center;color:#000066;">DELL</h2>
+<br>
+<br>
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Dell core i3</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  
+  <img src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/inspiron_notebooks/14_3481/pdp/notebook-inspiron-14-3480-3481-apj-pdp-gallery-504x350.jpg?fmt=jpg&wid=570&hei=400" alt="Avatar" class="chobi1" style="width:100%">
+ <br>
+  <div class="text1">
+   <br>
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 14 3000 Laptop
+</b></h6>
+  <h6><b>TK 34999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/inspiron_notebooks/15_3580/pdp/notebook-inspiron-15-3580-3581-na-pdp-gallery-504x350.jpg?fmt=jpg&wid=570&hei=400" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15 3000 Laptop
+</b></h6>
+  <h6><b>TK 34999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/inspiron_notebooks/14_5481_touch/global_spi/notebook-inspiron-14-5481-2-in-1-campaign-hero-504x350-ng-gray.psd?fmt=jpg&wid=570&hei=400" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 14 5000 2-in-1 Laptop</b></h6>
+  <h6><b>TK 34999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/inspiron_notebooks/15_5591/pdp/notebook-inspiron-2-in-1-5591-15-pdp-gallery-504x350.jpg?fmt=jpg&wid=570&hei=400" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 14 5000 2-in-1 Laptop</b></h6>
+  <h6><b>TK 34999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   <!-- 2nd row of core i3////////**** -->
+  
+  <div class="row">
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://i.dell.com/sites/csimages/App-Merchandizing_Images/all/inspiron-5593-nt-silver-black-kb-165x119.png" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 14 5000 Laptop
+</b></h6>
+  <h6><b>TK 34999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://i.dell.com/sites/csimages/App-Merchandizing_Images/all/inspiron-5593-nt-silver-black-kb-165x119.png" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15 5000 Laptop
+</b></h6>
+  <h6><b>TK 34999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    
+    
+    
+    </div>
+  
+  
+  <!-- 1st row of core i5////////**** -->
+  <br>
+<br>
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Dell core i5</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/dell/3493/inspiron-14-3493-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 14-3493 
+</b></h6>
+  <h6><b>TK 58,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/3593/inspiron-3593-01-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15-3593 Laptop
+</b></h6>
+  <h6><b>TK 59,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/dell/5593/5593-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15 5593 Laptop</b></h6>
+  <h6><b>TK 66,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/5391/13-5391/13-5391-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 13 5391 Laptop</b></h6>
+  <h6><b>TK 95,999</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   <!-- 2nd row of core i5////////**** -->
+  
+  <div class="row">
+
+  
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/5490/14-5490/14-5490-01-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 5490​ Laptop 
+</b></h6>
+  <h6><b>TK 70,000</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/5490/14-5490/14-5490-03-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 5490 Laptop
+</b></h6>
+  <h6><b>TK 74,540</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/dell/7391/7391-2in1-2-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 13 7391 2-in-1 Laptop</b></h6>
+  <h6><b>TK 1,15,000</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/5593/15-5593-2-500x500.jpeg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15 5593 Laptop</b></h6>
+  <h6><b>TK 74,000</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+  
+   <!-- 1st row of core i7////////**** -->
+  <br>
+<br>
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Dell core i7</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/dell/3491/3491-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 14 5490 Core i7​ Laptop 
+</b></h6>
+  <h6><b>TK 93,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/dell/5593/5593-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15 5593 Core i7 Laptop
+</b></h6>
+  <h6><b>TK 91,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/dell/5491/14-5491-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 15 5593 Laptop</b></h6>
+  <h6><b>TK 95,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/5391/13-5391/13-5391-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Inspiron 13 5391 Laptop</b></h6>
+  <h6><b>TK 98,000</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+ </div>
+   </section>
+  
+
+  
+  
+  
+  <!-- 1st row of Acer core i3////////**** -->
+
+  <br>
+<br>
+<div class="container-fluid"id="acer">
+<br>
+<h2 style="text-align:center;color:#000066;">ACER</h2>
+<br>
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Acer core i3</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/acer/a315-54/a315-55-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Acer Aspire 3 A315-54K 34SC Core i3 7th Gen  
+</b></h6>
+  <h6><b>TK 36,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-a315-54/aspire-a315-54-2-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Acer Aspire A315-54 Core i3 8th Gen
+</b></h6>
+  <h6><b>TK 39,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop-notebook/acer/i3%20Processor/Acer%20Aspire%20ES1-572-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Acer Aspire E5-475 Core i3 7th Gen</b></h6>
+  <h6><b>TK 35,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-a315-55g-10/aspire-a315-55g-10-3-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Acer Aspire A315-55G Core i3 10th Gen</b></h6>
+  <h6><b>TK 50,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+
+
+ <!-- 1st row of Acer core i5////////**** -->
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Acer core i5</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/acer/a315-53/a315-53-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Acer Aspire 3 A315-53 Core i5 8th Gen 
+</b></h6>
+  <h6><b>TK 47,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-a515-53/aspire-a515-53-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Aspire A515-53 55HK Core i5 8th Gen </b></h6>
+  <h6><b>TK 49,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/acer/a515-52g/aspire-5-a515-52g-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Aspire A515-52G 8th Gen Core i5</b></h6>
+  <h6><b>TK 66,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop-notebook/acer/i5%20Processor/Acer%20Aspire%20S5-371%20i5%207th%20Gen-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Aspire S5-371 7th Gen Core i5</b></h6>
+  <h6><b>TK 65,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+</div>
+
+
+
+ <!-- 1st row of HP core i3////////**** -->
+<div class="container-fluid"id="hp">
+<br>
+<h2 style="text-align:center;color:#000066;"><i>HP</i></h2>
+<br>
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;"><i>HP</i> core i3</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/240-g7/240-g7-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 240 G7 Core i3 7th Gen </b></h6>
+  <h6><b>TK 37,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop-notebook/hp-laptop/8th-gen/14-ck0143tu-i3-8th-gen-laptop/14-ck0143tu-notebook-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 14-ck0143TU Core i3 8th Gen</b></h6>
+  <h6><b>TK 42,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/14-ck2005tu/14-ck2005tu-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 14-ck2005TU 10th Gen Core i3</b></h6>
+  <h6><b>TK 42,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1014tu/15s-du1014tu-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 15s-du1014TU Core i3 10th Gen </b></h6>
+  <h6><b>TK 43,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+<!-- 2nd row of HP core i3////////**** -->
+
+
+
+<div class="row">
+
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/ck006tu/ck006tu-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 14-ck0006TU Core i3 8th Gen  </b></h6>
+  <h6><b>TK 41,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/da2010tu/da2010tu-2-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 15-da2010TU Core i3 10 Gen</b></h6>
+  <h6><b>TK 44,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/14-ck2004tu/14-ck2004tu-01-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 14-ck2004TU Core i3 10th Gen</b></h6>
+  <h6><b>TK 43,000</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-da2011tu/da2011tu-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 15-da2011TU Core i3 10th Gen  </b></h6>
+  <h6><b>TK 43,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+<!-- 1st row of hpcore i5////////**** -->
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;"><i>HP</i> core i5</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1013tu/15s-du1013tu-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 15s-du1013TU Core i5 10th Gen </b></h6>
+  <h6><b>TK 53,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs2043tu/15-cs2043tu-001-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs2043TU 8th Gen Core i5</b></h6>
+  <h6><b>TK 57,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs3005tu/15-cs3005tu-2-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs3005TU Core i5 10th Gen</b></h6>
+  <h6><b>TK 56,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs3006tu/15-cs3006tu-003-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs3006tu 10th Gen Core i5</b></h6>
+  <h6><b>TK 56,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+
+
+<!-- 2nd part of Hp core i5-->
+
+
+<div class="row">
+
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/450-g7/450-g7-01-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Probook 450 G7 Core i5 10th Gen </b></h6>
+  <h6><b>TK 59,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-pavilion-15-cs2106tx-core-i5-laptop/hp-pavilion-15-cs2106tx-core-i5-laptop-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs2106tx 8th Gen Core i5</b></h6>
+  <h6><b>TK 61,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/pavilion/14-ce2095tx/14-ce2095tx-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 14-ce2095TX Core i5 8th Gen </b></h6>
+  <h6><b>TK 60,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-440-g6/probook-440-g6-2-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Probook 440 G6 Core i5 8th Gen</b></h6>
+  <h6><b>TK 62,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+
+
+ <!-- HP core i7 1st part///////-->
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;"><i>HP</i> core i7</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs3057tx/cs3057tx-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs3057TX 10th Gen Core i7 </b></h6>
+  <h6><b>TK 78,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-440-g6/probook-440-g6-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Probook 440 G6 Core i7 8th Gen</b></h6>
+  <h6><b>TK 79,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs2103tx/15-cs2103tx-03-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs2103TX Core i7 8th Gen </b></h6>
+  <h6><b>TK 80,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs3050tx/15-cs3050tx-3-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs3050TX Core i7 10th Gen </b></h6>
+  <h6><b>TK 84,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+
+
+ <!-- HP core i7 2nd part///////-->
+
+<div class="row">
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-440-g6/probook-440-g6-3-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Probook 440 G6 Core i7 8th Gen </b></h6>
+  <h6><b>TK 86,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15-cs2100tx/15-cs2100tx-4-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP Pavilion 15-cs2100TX Core i7 8th Gen</b></h6>
+  <h6><b>TK 85,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/probook-x360-440-g1/hp-probook-x360-440-g1-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP ProBook x360 440 G1 Core i7 8th Gen</b></h6>
+  <h6><b>TK 97,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/ah1007tu/ah1007tu-gold-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP ENVY 13-ah1008tu Core i7 8th Gen </b></h6>
+  <h6><b>TK 108,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+</div>
+
+
+
+
+ <!-- 1st row of lenovo core i3////////**** -->
+<div class="container-fluid"id="lenovo">
+<br>
+<h2 style="text-align:center;color:#000066;">LENOVO</h2>
+<br>
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Lenovo core i3</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/ip-s145-core-i3/ip-s145-core-i3-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IP S145 10th Gen Core i3 </b></h6>
+  <h6><b>TK 44,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idapad-330/midnight-blue/330-midnight-blue-3-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Ideapad 330 Core i3 8th Gen</b></h6>
+  <h6><b>TK 46,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idea-pad/ip-l340-i5-blue/lp-l340-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IdeaPad IP S340 Core i3 8th Gen</b></h6>
+  <h6><b>TK 48,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/s340/15-inch/s340-gray-01-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IdeaPad S340 Core i3 10th Gen </b></h6>
+  <h6><b>TK 51,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+<!-- 2nd row of HP core i3////////**** -->
+
+
+
+<div class="row">
+
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/v130/v130-14ikb/v130-003-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo V130 Core i3 7th Gen   </b></h6>
+  <h6><b>TK 36,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/nb-ln-v330-14ikb/nb-ln-v330-14ikb-6-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo V330 Core i3 8th Gen</b></h6>
+  <h6><b>TK 44,150</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/tp-e480/tp-e480-4-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo ThinkPad E480 8th Gen</b></h6>
+  <h6><b>TK 44,300</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ip-130/ip-130-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>HP 15-da2011TU Core i3 10th Gen  </b></h6>
+  <h6><b>TK 31,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+<!-- 1st row of hpcore i5////////**** -->
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Lenovo core i5</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idea-pad/ip-l340-i5-blue/lp-l340-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IdeaPad IP L340 Core i5 8th Gen</b></h6>
+  <h6><b>TK 53,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/yoga-s730/yoga-s730-1-500x500.png" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Yoga S730-13IWL Core i5 8th Gen</b></h6>
+  <h6><b>TK 95,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idea-pad/ip-s145-14iwl/s145-14iwl-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IdeaPad IP S145-14IWL Core i5 8th Gen</b></h6>
+  <h6><b>TK 52,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idea-pad/ip-s340-i5-blue/ip-s340-i5-blue-1-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IdeaPad IP S340 Core i5 8th Gen</b></h6>
+  <h6><b>TK 62,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+
+
+<!-- 2nd part of Hp core i5-->
+
+
+<div class="row">
+
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ip-130/ip-130-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IdeaPad 130 Core i5 8th Gen </b></h6>
+  <h6><b>TK 46,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/think-pad/e490/e490-4-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo ThinkPad L480 Core i5 8th Gen </b></h6>
+  <h6><b>TK 66,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop-notebook/lenovo/Thinkpad/lenovo-thinkpad-l470-500x500.png" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Thinkpad L470 i5 7th Gen </b></h6>
+  <h6><b>TK 60,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop-notebook/lenovo/7th-gen/i5-laptop/320s-500x500.png" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IP320s 8th Gen Core i5 </b></h6>
+  <h6><b>TK 59,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+
+
+ <!-- HP core i7 1st part///////-->
+
+<div class="row">
+<h3 style="text-align:center;color:#00ccff;">Lenovo core i7</h3>
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ip-720s/ip-720s-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo IP720s 7th Gen Core i7 </b></h6>
+  <h6><b>TK 106,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idea-pad/s145/black/s145-14iwl-01-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>IdeaPad S145-14IWL Core i7 8th Gen</b></h6>
+  <h6><b>TK 70,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/tp-e480/tp-e480-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo ThinkPad E480 Core i7 8th Gen </b></h6>
+  <h6><b>TK 84,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/idapad-330/lenovo-laptop-ideapad-330-14-feature-02-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Ideapad 330 8th Gen Core i7 </b></h6>
+  <h6><b>TK 70,000</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+  </div>
+  
+   
+  
+
+  
+  
+
+
+
+ <!-- HP core i7 2nd part///////-->
+
+<div class="row">
+  <br>
+    <div class="col-xs-6 col-sm-3" style="background-color:white;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/yoga-720/yoga-720-2-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Yoga 720 Core i7 8th Gen </b></h6>
+  <h6><b>TK 140,500</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+      
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">
+   <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/yoga-s730/yoga-s730-1-500x500.png" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Yoga S730 Core i7 8th Gen</b></h6>
+  <h6><b>TK 116,450</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+
+    </div>
+    <!-- Add clearfix for only the required viewport -->
+    <div class="clearfix visible-xs"></div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">
+ <div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/y530/y530-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo Legion Y530 Core i7 8th Gen</b></h6>
+  <h6><b>TK 119,599</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    
+    </div>
+    <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">
+<div class="polaroid1">
+  <div class="details1">
+  <img src="https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/thinkpad-t480/t480-500x500.jpg" alt="Avatar" class="chobi1" style="width:100%">
+ <div class="text1">
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#myModal"id="dtlbtn">Details</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"style="text-align:center;">DETAILS</h4>
+        </div>
+        <div class="modal-body">
+        <h3><b>Configurations</b></h3>
+        <br>
+ <h4><b>Processor</b></h4>
+         <p>10th Generation Intel® Core™ i3-1005G1 Processor (4MB Cache, up to 3.4 GHz)</p>
+
+<h4><b>Operating System</b></h4>
+<p>Windows 10 Home in S mode 64-bit, English</p>
+
+<h4><b>Graphics Card</b></h4>
+<p>Intel® UHD Graphics with shared graphics memory</p>
+
+<h4><b>Memory</b></h4>
+<p>4 GB, 1 x 4 GB, DDR4, 2666 MHz</p>
+
+<h4><b>Hard Drive</b></h4>
+<p>128GB M.2 PCIe NVMe Solid State Drive</p>
+<h4><b>Display</b></h4>
+<p>14.0-inch HD (1366 x 768) Anti-Glare LED-Backlit Non-touch Display</p>
+<h4><b>Wireless</b></h4>
+<p>Qualcomm® DW1810, 1 x 1, 802.11ac with Wi-Fi, Wireless LAN, Bluetooth 4.1</p>
+<h4><b>Primary Battery</b></h4>
+<p>3-Cell, 42 WHr, Integrated battery</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+    </div>
+  <div class="pricetag1">
+  <h6><b>Lenovo ThinkPad T480 Core i7  </b></h6>
+  <h6><b>TK 131,199</b></h6>
+  <button type="button"class="bttn11">BUY NOW</button><button type="button"class="bttn21">ADD CHART</button>
+  </div>
+  </div>
+
+    </div>
+  </div>
+ 
+
+</div>
+
+</div>
+</body>
+</html>
+
